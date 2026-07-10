@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navaja Negra — Barbería de Autor</title>
+<meta name="description" content="Navaja Negra. Barbería premium. Corte clásico, fade, barba y afeitado tradicional.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <svg class="loader-blade" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="20" x2="200" y2="20" stroke="#C9A65C" stroke-width="1"/>
+      <circle class="loader-spark" cx="0" cy="20" r="3" fill="#C9A65C"/>
+    </svg>
+    <span class="loader-word">NAVAJA&nbsp;NEGRA</span>
+  </div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="filo-track">
+
+<!-- ============ SCROLL PROGRESS — EL FILO ============ -->
+  <div class="filo-fill" id="filoFill"></div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <span class="nav-logo-mark">NN</span>
+      <span class="nav-logo-text">Navaja&nbsp;Negra</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#nosotros" class="nav-link" data-hover>Nosotros</a>
+      <a href="#servicios" class="nav-link" data-hover>Servicios</a>
+      <a href="#galeria" class="nav-link" data-hover>Galería</a>
+      <a href="#equipo" class="nav-link" data-hover>Equipo</a>
+      <a href="#faq" class="nav-link" data-hover>Preguntas</a>
+      <a href="#reserva" class="nav-btn" data-hover>Reservar</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" id="heroBg">
+    <div class="hero-photo-slot">
+    <img src="imagenes/barbero.jpg" alt="Barbero de Navaja Negra cortando cabello">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow reveal-up">Barbería de autor — Guadalajara</p>
+    <h1 class="hero-title">
+      <span class="line reveal-up" style="--d:0.05s">El filo</span>
+      <span class="line reveal-up" style="--d:0.18s">que define</span>
+      <span class="line reveal-up gold-italic" style="--d:0.31s">tu carácter.</span>
+    </h1>
+    <p class="hero-sub reveal-up" style="--d:0.46s">
+      Cortes clásicos, fades precisos y afeitado tradicional a navaja,
+      en un espacio pensado para quienes no dejan nada al azar.
+    </p>
+    <div class="hero-actions reveal-up" style="--d:0.6s">
+      <a href="#reserva" class="btn btn-gold" data-hover>
+        <span>Reservar cita</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a href="https://wa.me/523311234567" target="_blank" rel="noopener" class="btn btn-outline" data-hover>
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Escríbenos</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator reveal-up" style="--d:0.9s">
+    <span>Desliza</span>
+    <div class="scroll-line"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ============ 2. SOBRE NOSOTROS ============ -->
+<section class="about" id="nosotros">
+  <div class="section-inner about-grid">
+    <div class="about-visual reveal-up">
+      <div class="about-frame">
+        <div class="photo-slot">
+          <img src="imagenes/interior.jpg">
+        </div>
+      </div>
+      <div class="about-badge">
+        <svg viewBox="0 0 100 100" class="badge-ring">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="#C9A65C" stroke-width="1"/>
+        </svg>
+        <span class="badge-year">Desde<br><strong>2015</strong></span>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <p class="eyebrow reveal-up">Sobre nosotros</p>
+      <h2 class="section-title reveal-up">Una tradición afilada<br>con precisión moderna.</h2>
+      <p class="reveal-up">
+        Navaja Negra nació de una idea simple: la barbería clásica no necesita
+        reinventarse, necesita ejecutarse con excelencia. Cada corte responde a un
+        ritual — toalla caliente, navaja afilada a mano y la paciencia de quien
+        entiende que el detalle es lo único que realmente se nota.
+      </p>
+      <p class="reveal-up">
+        Formamos a cada barbero durante meses antes de dejarlo tomar la navaja
+        con un cliente. No es un salón. Es un oficio.
+      </p>
+      <div class="about-signature reveal-up">
+        <span class="signature-script">Navaja Negra</span>
+        <span class="signature-label">Barbería de autor · Est. 2015</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. SERVICIOS ============ -->
+<section class="services" id="servicios">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up center">Nuestros servicios</p>
+    <h2 class="section-title center reveal-up">Cada servicio,<br>un ritual completo.</h2>
+
+    <div class="services-grid">
+      <div class="service-card reveal-up">
+        <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+        <h3>Corte clásico</h3>
+        <p>Técnica de tijera y navaja sobre el contorno. Acabado limpio, atemporal.</p>
+        <span class="service-price">$280 MXN</span>
+      </div>
+      <div class="service-card reveal-up">
+        <div class="service-icon"><i class="fa-solid fa-wind"></i></div>
+        <h3>Fade</h3>
+        <p>Degradado de precisión milimétrica, de piel a largo, sin transiciones visibles.</p>
+        <span class="service-price">$320 MXN</span>
+      </div>
+      <div class="service-card reveal-up">
+        <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+        <h3>Barba</h3>
+        <p>Diseño y perfilado con toalla caliente, aceites y balm de acabado.</p>
+        <span class="service-price">$220 MXN</span>
+      </div>
+      <div class="service-card reveal-up">
+        <div class="service-icon"><i class="fa-solid fa-droplet"></i></div>
+        <h3>Afeitado tradicional</h3>
+        <p>Ritual completo a navaja: vapor, espuma batida y doble pasada.</p>
+        <span class="service-price">$260 MXN</span>
+      </div>
+      <div class="service-card service-card-wide reveal-up">
+        <div class="service-icon"><i class="fa-solid fa-crown"></i></div>
+        <h3>Paquete Navaja Negra</h3>
+        <p>Corte + barba + afeitado tradicional + bebida de cortesía. La experiencia completa, sin prisa.</p>
+        <span class="service-price">$650 MXN</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. POR QUÉ ELEGIRNOS ============ -->
+<section class="why" id="porque">
+  <div class="section-inner why-grid">
+    <div class="why-copy">
+      <p class="eyebrow reveal-up">¿Por qué elegirnos?</p>
+      <h2 class="section-title reveal-up">No cortamos cabello.<br>Cuidamos el detalle.</h2>
+    </div>
+    <div class="why-list">
+      <div class="why-item reveal-up">
+        <span class="why-icon"><i class="fa-solid fa-hand-sparkles"></i></span>
+        <div>
+          <h3>Herramientas afiladas a mano</h3>
+          <p>Cada navaja se asienta antes de cada turno. Nunca tocamos tu piel con un filo mediocre.</p>
+        </div>
+      </div>
+      <div class="why-item reveal-up">
+        <span class="why-icon"><i class="fa-solid fa-clock"></i></span>
+        <div>
+          <h3>Citas sin espera</h3>
+          <p>Agenda por horario exacto. Tu tiempo vale tanto como el nuestro.</p>
+        </div>
+      </div>
+      <div class="why-item reveal-up">
+        <span class="why-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        <div>
+          <h3>Barberos certificados</h3>
+          <p>Formación continua en técnica clásica y tendencias contemporáneas.</p>
+        </div>
+      </div>
+      <div class="why-item reveal-up">
+        <span class="why-icon"><i class="fa-solid fa-champagne-glasses"></i></span>
+        <div>
+          <h3>Ambiente exclusivo</h3>
+          <p>Whisky de cortesía, música seleccionada y un espacio pensado para desconectar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. ESTADÍSTICAS ============ -->
+<section class="stats" id="stats">
+  <div class="section-inner stats-grid">
+    <div class="stat-item reveal-up">
+      <span class="stat-number" data-target="5000" data-suffix="+">0</span>
+      <span class="stat-label">Clientes atendidos</span>
+    </div>
+    <div class="stat-item reveal-up">
+      <span class="stat-number" data-target="4.9" data-decimal="1">0</span>
+      <span class="stat-label">Estrellas promedio</span>
+    </div>
+    <div class="stat-item reveal-up">
+      <span class="stat-number" data-target="10" data-suffix=" años">0</span>
+      <span class="stat-label">De experiencia</span>
+    </div>
+    <div class="stat-item reveal-up">
+      <span class="stat-number" data-target="98" data-suffix="%">0</span>
+      <span class="stat-label">De satisfacción</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. GALERÍA ============ -->
+<section class="gallery" id="galeria">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up center">Galería</p>
+    <h2 class="section-title center reveal-up">El trabajo habla<br>por sí solo.</h2>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal-up" style="--span:2"><div class="photo-slot"><i class="fa-solid fa-scissors"></i><span>Corte en proceso</span></div></div>
+      <div class="gallery-item reveal-up"><div class="photo-slot"><i class="fa-solid fa-store"></i><span>Fachada</span></div></div>
+      <div class="gallery-item reveal-up"><div class="photo-slot"><i class="fa-solid fa-chair"></i><span>Estación de trabajo</span></div></div>
+      <div class="gallery-item reveal-up"><div class="photo-slot"><i class="fa-solid fa-user"></i><span>Cliente satisfecho</span></div></div>
+      <div class="gallery-item reveal-up" style="--span:2"><div class="photo-slot"><i class="fa-solid fa-droplet"></i><span>Afeitado tradicional</span></div></div>
+      <div class="gallery-item reveal-up"><div class="photo-slot"><i class="fa-solid fa-user-tie"></i><span>Perfilado de barba</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. EQUIPO ============ -->
+<section class="team" id="equipo">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up center">Equipo</p>
+    <h2 class="section-title center reveal-up">Las manos<br>detrás del filo.</h2>
+
+    <div class="team-grid">
+      <div class="team-card reveal-up">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Rodrigo Ibarra</h3>
+        <span class="team-role">Fundador · Master Barber</span>
+        <p>12 años de oficio. Especialista en afeitado tradicional y diseño de barba.</p>
+      </div>
+      <div class="team-card reveal-up">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Diego Salas</h3>
+        <span class="team-role">Especialista en fade</span>
+        <p>Precisión milimétrica. El barbero que todos piden para degradados imposibles.</p>
+      </div>
+      <div class="team-card reveal-up">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Mauricio Reyes</h3>
+        <span class="team-role">Barbero clásico</span>
+        <p>Formado en técnica europea. El corte de toda la vida, hecho como debe ser.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. TESTIMONIOS ============ -->
+<section class="testimonials" id="testimonios">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up center">Testimonios</p>
+    <h2 class="section-title center reveal-up">Lo que dicen<br>nuestros clientes.</h2>
+
+    <div class="testi-carousel reveal-up">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-slide">
+          <i class="fa-solid fa-quote-left testi-quote"></i>
+          <p>"Es la única barbería donde salgo exactamente como pedí. El afeitado tradicional es otro nivel."</p>
+          <span class="testi-author">— Andrés Villalobos</span>
+        </div>
+        <div class="testi-slide">
+          <i class="fa-solid fa-quote-left testi-quote"></i>
+          <p>"El ambiente, la atención, el detalle en cada paso. Se siente una barbería de verdad, no una franquicia."</p>
+          <span class="testi-author">— Emilio Castañeda</span>
+        </div>
+        <div class="testi-slide">
+          <i class="fa-solid fa-quote-left testi-quote"></i>
+          <p>"Encontré a mi barbero de cabecera. El fade de Diego no tiene comparación en la ciudad."</p>
+          <span class="testi-author">— Sebastián Rocha</span>
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. ANTES Y DESPUÉS ============ -->
+<section class="compare" id="antes-despues">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up center">Resultados</p>
+    <h2 class="section-title center reveal-up">Antes y después.</h2>
+
+    <div class="compare-slider reveal-up" id="compareSlider">
+      <div class="compare-before">
+        <div class="photo-slot dark"><i class="fa-solid fa-user"></i><span>Antes</span></div>
+      </div>
+      <div class="compare-after" id="compareAfter">
+        <div class="photo-slot"><i class="fa-solid fa-user"></i><span>Después</span></div>
+      </div>
+      <div class="compare-handle" id="compareHandle">
+        <div class="compare-handle-circle"><i class="fa-solid fa-left-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="section-inner faq-inner">
+    <p class="eyebrow reveal-up center">Preguntas frecuentes</p>
+    <h2 class="section-title center reveal-up">Antes de venir.</h2>
+
+    <div class="faq-list">
+      <div class="faq-item reveal-up">
+        <button class="faq-question" data-hover>
+          <span>¿Necesito reservar con anticipación?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer"><p>Recomendamos reservar con al menos 24 horas de anticipación, especialmente los fines de semana. Puedes hacerlo desde el formulario de esta página o por WhatsApp.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-question" data-hover>
+          <span>¿Cuánto dura una cita?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer"><p>Un corte clásico o fade toma entre 30 y 40 minutos. El Paquete Navaja Negra completo dura aproximadamente 75 minutos.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-question" data-hover>
+          <span>¿Aceptan pago con tarjeta?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer"><p>Sí, aceptamos efectivo, tarjeta y transferencia. También puedes pagar por adelantado al reservar en línea.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-question" data-hover>
+          <span>¿Atienden a menores de edad?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer"><p>Sí, atendemos a partir de los 10 años, siempre acompañados de un adulto en su primera visita.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-question" data-hover>
+          <span>¿Puedo cancelar o reprogramar mi cita?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer"><p>Claro. Solo pedimos avisar con al menos 3 horas de anticipación para poder liberar el espacio a otro cliente.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. RESERVA ============ -->
+<section class="booking" id="reserva">
+  <div class="section-inner booking-grid">
+    <div class="booking-copy reveal-up">
+      <p class="eyebrow">Reserva tu cita</p>
+      <h2 class="section-title">Aparta tu lugar<br>en el sillón.</h2>
+      <p>Completa el formulario y confirmamos tu horario en menos de una hora. Si prefieres, también puedes escribirnos directo por WhatsApp.</p>
+      <div class="booking-info">
+        <div class="booking-info-item"><i class="fa-solid fa-location-dot"></i><span>Av. Chapultepec 123, Guadalajara, Jal.</span></div>
+        <div class="booking-info-item"><i class="fa-solid fa-clock"></i><span>Mar – Sáb · 10:00 – 20:00</span></div>
+        <div class="booking-info-item"><i class="fa-solid fa-phone"></i><span>+52 33 1123 4567</span></div>
+      </div>
+    </div>
+
+    <form class="booking-form reveal-up" id="bookingForm">
+      <div class="form-row">
+        <input type="text" id="fName" required placeholder=" ">
+        <div class="form-group">
+          <label for="fName">Nombre completo</label>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="fPhone" required placeholder=" ">
+          <label for="fPhone">Teléfono</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <select id="fService" required>
+            <option value="" disabled selected></option>
+            <option>Corte clásico</option>
+            <option>Fade</option>
+            <option>Barba</option>
+            <option>Afeitado tradicional</option>
+            <option>Paquete Navaja Negra</option>
+          </select>
+          <label for="fService">Servicio</label>
+        </div>
+        <div class="form-group">
+          <input type="date" id="fDate" required placeholder=" ">
+          <label for="fDate">Fecha</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea id="fNotes" rows="3" placeholder=" "></textarea>
+        <label for="fNotes">Notas (opcional)</label>
+      </div>
+      <button type="submit" class="btn btn-gold btn-full" data-hover>
+        <span>Confirmar reserva</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <p class="form-success" id="formSuccess"><i class="fa-solid fa-check"></i> Solicitud recibida. Te confirmamos por WhatsApp.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ 12. MAPA ============ -->
+<section class="map-section" id="ubicacion">
+  <div class="map-slot">
+    <i class="fa-solid fa-map-location-dot"></i>
+    <span>Espacio preparado para Google Maps</span>
+    <p>Av. Chapultepec 123, Guadalajara, Jalisco</p>
+  </div>
+</section>
+
+<!-- ============ 13. FOOTER ============ -->
+<footer class="footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo" data-hover>
+        <span class="nav-logo-mark">NN</span>
+        <span class="nav-logo-text">Navaja&nbsp;Negra</span>
+      </a>
+      <p>Barbería de autor. Guadalajara, Jalisco.</p>
+      <div class="footer-social">
+        <a href="#" data-hover aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" data-hover aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/523311234567" data-hover aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" data-hover aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <a href="#nosotros" data-hover>Nosotros</a>
+      <a href="#servicios" data-hover>Servicios</a>
+      <a href="#galeria" data-hover>Galería</a>
+      <a href="#equipo" data-hover>Equipo</a>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <a href="#servicios" data-hover>Corte clásico</a>
+      <a href="#servicios" data-hover>Fade</a>
+      <a href="#servicios" data-hover>Barba</a>
+      <a href="#servicios" data-hover>Afeitado tradicional</a>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+      </div>
+      <span>Av. Chapultepec 123, GDL</span>
+      <span>+52 33 1123 4567</span>
+      <span>hola@navajanegra.mx</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+  </footer>
+    <span>© 2026 Navaja Negra. Todos los derechos reservados.</span>
+    <span>Diseñado con precisión.</span>
+  </div>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<a href="https://wa.me/523311234567" target="_blank" rel="noopener" class="float-btn whatsapp-float" data-hover aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+<button class="float-btn top-float" id="topFloat" data-hover aria-label="Volver arriba">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
